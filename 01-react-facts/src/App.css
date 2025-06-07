@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-image: url(./assets/react-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-image: linear-gradient(to right, #80639a, #9c7a9b) */
+}
+
+#root {
+  background-color: #1a1c22;
+  width: 45%;
+  margin: 40px 0px;
+  border: 4px solid #ffffff;
+  border-radius: 20px;
+}
+
+nav {
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #0e0f12;
+  border-top-left-radius: 17px;
+  border-top-right-radius: 17px;
+}
+
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  color: #23b4e1;
+}
+
+main {
+  background-image: url(./assets/react-logo-half.png);
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  padding: 20px 40px;
+  padding-bottom: 80px;
+  background-color: #272930;
+  border-bottom-left-radius: 17px;
+  border-bottom-right-radius: 17px;
+}
+
+
+.main-main {
+  display: flex;
+  align-items: center;
+}
+
+.main-h1 {
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.main-li::marker {
+  color: #23b4e1;
+  font-size: 1.5rem;
+}
+
+.main-ul {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #ffffff;
+}
