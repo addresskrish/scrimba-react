@@ -5,7 +5,7 @@ function Header() {
         <>
             <header>
                 <img src={ GlobeLogo } alt="globe-img" height="30px" />
-                <p className="header-p">my travel journal.</p>
+                <p className="header-p">Travel Journal</p>
             </header>
         </>
     )
