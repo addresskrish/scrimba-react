@@ -26,3 +26,40 @@ header > h1 {
   font-size: 1.8rem;
   font-weight: 500;
 }
+
+main {
+    margin: 3rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+input {
+    border: 1px solid #D1D5DB;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    flex-grow: 1;
+    min-width: 150px;
+    max-width: 400px;
+}
+
+button {
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #141413;
+    color: #FAFAF8;
+}
+
+button::before {
+    content: "+";
+    font-size: 1rem;
+    margin-right: 0.5rem;
+}
