@@ -28,6 +28,8 @@ header > h1 {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     margin: 3rem;
 }
 
@@ -48,7 +50,7 @@ input {
 }
 
 button {
-    font-family: Inter, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 600;
     cursor: pointer;
     padding: 1rem;
@@ -62,4 +64,27 @@ button::before {
     content: "+";
     font-size: 1rem;
     margin-right: 0.5rem;
+}
+
+ul {
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media screen and (max-width: 480px) {
+
+    main {
+        margin: 3rem 1rem;
+    }
+
+   input, button {
+    font-size: 0.7rem;
+    } 
+
+  button::before {
+    font-size: 0.7rem;
+    }
+
 }
