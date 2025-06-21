@@ -7,6 +7,7 @@ function App() {
   const [age, setAge] = useState(0)
   const [isToggle, setIsToggle] = useState(false)
   const [no, setNo] = useState(0)
+  const [glow, setGlow] = useState(false)
 
   const handleName = () => {
     setName("Krish")
@@ -35,6 +36,11 @@ function App() {
     setNo(no - 1)
   }
 
+  const handleGlow = () => {
+    setGlow(!glow)
+  }
+
+
   return (
     <>
       {/* <p>Name: {name}</p>
@@ -45,13 +51,18 @@ function App() {
 
       <p>Toggle: {isToggle ? "Yes" : "No"}</p>
       <button onClick={handleToggle}>Submit</button> */}
-      <div className="num">
+      {/* <div className="num">
         <h1>{no}</h1>
         <div className="button">
           <button onClick={handleIncrement}>Increment</button>
           <button onClick={handleReset}>Reset</button>
           <button onClick={handleDecrement}>Decrement</button>
         </div>
+      </div> */}
+
+      <div className='circleClass'>
+        <div className={`circle ${glow ? 'glowEffect' : ''}`}></div>
+        <button onClick={handleGlow}>Glow</button>
       </div>
     </>
   )

@@ -27,3 +27,31 @@ button {
   padding: 0.5rem;
   background-color: #ffff54;
 }
+
+.circleClass {
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.circle {
+  border-radius: 50%;
+  background-color: #FAFAF8;
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+}
+
+.circleClass > button {
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-color: #ffff54;
+}
+
+.glowEffect {
+  box-shadow: 0 0 20px 10px rgba(255, 200, 0, 0.8);
+  transition: box-shadow 0.3s ease;
+}
