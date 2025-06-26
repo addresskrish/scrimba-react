@@ -36,9 +36,10 @@ function Main() {
                     <input type="text" placeholder="e.g. oregano" name="ingedient" required/>
                     <button>Add ingredient</button>
                 </form>
-                { ingredient.length > 0 && <section>
+                { ingredient.length > 0 && 
+                    <section className="sec-conx">
                         <h2>Ingredients on hand:</h2>
-                        <ul>
+                        <ul className="ul-con">
                             {ingredientElement}
                         </ul>
                         { ingredient.length > 3 &&
@@ -58,7 +59,7 @@ function Main() {
                         <p>Based on the ingredients you have available, I would recommend making a simple a delicious <strong>Beef Bolognese Pasta</strong>. Here is the recipe:</p>
                         <h3>Beef Bolognese Pasta</h3>
                         <strong>Ingredients:</strong>
-                        <ul>
+                        <ul className="ul-con">
                             <li>1 lb. ground beef</li>
                             <li>1 onion, diced</li>
                             <li>3 cloves garlic, minced</li>
